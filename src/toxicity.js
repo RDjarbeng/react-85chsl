@@ -7,7 +7,9 @@ const threshold = 0.5;
 export default function Toxicity() {
   const [model, setModel] = useState();
   const [text, setText] = useState('Loading model');
-  const [value, setValue] = useState('Input toxic values here ');
+  const [value, setValue] = useState(
+    'Clear text and Input toxic values here Eg: fool '
+  );
 
   const userInput = [' foolish guy.'];
 
